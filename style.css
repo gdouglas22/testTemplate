@@ -1,0 +1,345 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: none;
+    transition: 0.3s;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+    font-size: 1vh;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    max-height: 0.1vh;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.default-header {
+    padding: 1vh 0;
+    height: 25vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #BDC6CC;
+}
+
+.logo {
+    border: 0.5vh solid #e0ff4f;
+    width: 6vh;
+    height: 6vh;
+    min-width: 3vh;
+    min-height: 3vh;
+}
+
+.header-text {
+    font-size: 6vh;
+    text-transform: uppercase;
+}
+
+.header-nav
+{
+    width: 100%;
+    padding: 0 5vw;
+}
+
+.nav-header-list{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-transform: lowercase; 
+}
+
+.nav-header-list a {
+    font-size: 4vh;
+    border-bottom: 0 solid #BDC6CC;
+}
+
+.nav-header-list a:hover {
+    border-bottom: 0.5vh solid #e0ff4f;
+}
+
+.default-main {
+    width: 100%;
+    padding: 1vh 0;
+}
+
+.default-main h2 {
+    font-size: 6vh;
+    text-align: center;
+    padding: 2vh 0;
+    text-transform: uppercase;
+}
+
+.default-main article {
+    padding: 0 10vw;
+}
+
+.default-main article h3 {
+    font-size: 4vh;
+    padding: 1vh 0;
+    text-transform: uppercase;
+}
+
+.default-main article p {
+    font-size: 3vh;
+}
+
+.gallery-collection 
+{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    width: 41vh;
+    height: 41vh;
+    margin-bottom: 5vh;
+    padding: 1vh;
+}
+
+.gallery-item h4 {
+    font-size: 3vh;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    height: 10%;
+}
+
+.gallery-item .image {
+    width: 60%;
+    height: 60%;
+    margin: auto;
+}
+
+.gallery-item .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-item .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 30%;
+}
+
+.gallery-item .info .price {
+    font-size: 3vh;
+    height: 25%;
+    text-align: center;
+}
+
+.gallery-item .info .about {
+    height: 25%;
+    font-size: 2vh;
+    text-align: center;
+}
+
+.gallery-item .info button {
+    font-size: 3vh;
+    height: 50%;
+    background-color: #f2fcff;
+    border: 0.25vh solid black;
+}
+
+.gallery-item .info button:hover {
+    background-color: #e0ff4f;
+}
+
+.default-footer {
+    height: 50vh;
+    width: 100%;
+    background-color: #8C9398;
+    margin-top: 20vh;
+    padding: 1vh 0;
+    display: flex;
+    position: relative;
+}
+
+.default-footer .additional{
+    width: 20%;
+    padding: 0 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.default-footer .additional p {
+    font-size: 1.5vh;
+}
+
+.footer-nav
+{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-footer-list
+{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.nav-footer-list h3 {
+    font-size: 3vh;
+}
+
+.nav-footer-list a
+{
+    font-size: 2vh;
+}
+
+.nav-footer-list a:hover
+{
+    color: #e0ff4f;
+}
+
+.default-footer .rights
+{
+    position: absolute;
+    font-size: 2vh;
+    right: 5vh;
+    bottom: 5vh;
+}
+
+.login-form {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form * {
+    padding: 2vh;
+}
+
+.login-form .buttons{
+    width: 50%;
+    text-align: center;
+}
+
+.buttons button {
+    width: 25%;
+    height: 10vh;
+    font-size: 3vh;
+}
+
+.buttons button:hover {
+    background-color: #e0ff4f;
+}
+
+.login-form h2 {
+    font-size: 6vh;
+    padding-bottom: 20vh;
+}
+
+.login-form .forgot p{
+    font-size: 2vh;
+    color: #BDC6CC;
+}
+
+.login-form .forgot p:hover {
+    color: black;
+}
+
+.login-form .back p {
+    font-size: 4vh;
+}
+
+.login-form .back {
+    position: absolute;
+    bottom: 5vh;
+}
+
+.login-form .back p:hover {
+    color: #e0ff4f;
+}
+
+/* for phones */
+@media screen and (max-width: 699px) {
+    .logo {
+        display: none;
+    }
+
+    .default-header {
+        padding: 1vh 5vw;
+        height: 25vh;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: #BDC6CC;
+    }
+
+    .nav-header-list{
+        display: flex;
+        justify-content: space-between;
+        text-transform: lowercase;
+        flex-direction: column;
+        align-self: flex-end;
+    }
+
+    .header-nav
+    {
+        text-align: start;
+        width: auto;
+        padding: 0 5vw;
+    }
+
+    .header-text {
+        padding: 0 5vw;
+        width: 50%;
+        font-size: 3vh;
+        text-transform: uppercase;
+        border: 0.5vh solid #e0ff4f;
+    }
+
+    .login-form .buttons{
+        width: 100%;
+        text-align: center;
+    }
+
+    .buttons button {
+        width: 50%;
+        height: 10vh;
+        font-size: 3vh;
+        margin: 1vh 0;
+    }
+
+    .login-form h2 {
+        font-size: 6vh;
+        padding-bottom: 10vh;
+        text-align: center;
+    }
+}
